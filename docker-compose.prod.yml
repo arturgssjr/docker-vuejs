@@ -1,0 +1,10 @@
+version: "3.7"
+
+services: 
+    vue-app:
+        container_name: vue-app-prod
+        build: 
+            context: .
+            dockerfile: prod.dockerfile
+        ports: 
+            - 80:80
